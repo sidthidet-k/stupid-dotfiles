@@ -36,6 +36,14 @@ or to `~/.zshrc` file for Zsh:
 path+=(~/.local/bin)
 ```
 
+Alternatively, you can use stupid-dotfiles without installing it because it is only a single bash script file:
+
+| Method    | Command                                                                                                   |
+| :-------- | :-------------------------------------------------------------------------------------------------------- |
+| **curl**  | `sh -c "$(curl -fsSL https://raw.githubusercontent.com/sidthidet-k/stupid-dotfiles/main/stupid-dotfiles.sh)"` |
+| **wget**  | `sh -c "$(wget -O- https://raw.githubusercontent.com/sidthidet-k/stupid-dotfiles/main/stupid-dotfiles.sh)"`   |
+| **fetch** | `sh -c "$(fetch -o - https://raw.githubusercontent.com/sidthidet-k/stupid-dotfiles/main/stupid-dotfiles.sh)"` |
+
 ## Using stupid-dotfiles
 
 First, mark any directory for stupid-dotfiles by creating a `.stupid-dotfiles-ignore` file to specify files
@@ -62,14 +70,6 @@ Run the stupid-dotfiles command:
 ```sh
 stupid-dotfiles
 ```
-
-Alternatively, you can use stupid-dotfiles without installing it because it is only a single bash script file:
-
-| Method    | Command                                                                                                   |
-| :-------- | :-------------------------------------------------------------------------------------------------------- |
-| **curl**  | `sh -c "$(curl -fsSL https://raw.githubusercontent.com/sidthidet-k/stupid-dotfiles/main/stupid-dotfiles.sh)"` |
-| **wget**  | `sh -c "$(wget -O- https://raw.githubusercontent.com/sidthidet-k/stupid-dotfiles/main/stupid-dotfiles.sh)"`   |
-| **fetch** | `sh -c "$(fetch -o - https://raw.githubusercontent.com/sidthidet-k/stupid-dotfiles/main/stupid-dotfiles.sh)"` |
 
 Then it symbolically links `.vimrc` from the current directory to the home directory.
 
