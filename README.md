@@ -88,3 +88,7 @@ In the home directory:
 
 * .vimrc (symbolic link)
 * .config/nvim/init.vim (symbolic link)
+
+## License
+
+stupid-dotfiles is released under the [MIT license](LICENSE).
