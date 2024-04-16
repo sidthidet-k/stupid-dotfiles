@@ -25,9 +25,10 @@ done
 file_list=($(find . -type f "${exclude_file_option[@]}" -exec echo "{}" \;))
 
 for file in "${file_list[@]}"; do
+	file="${file#./}"
 	directory="$(dirname $file)"
-	[ ! -e "$HOME/$directory" ] && mkdir -pv $(readlink -f "$HOME/$directory")
-	[ ! -e "$HOME/$file" ] && ln -sv $(readlink -f "$file") $(readlink -f "$HOME/$file")
+	[ ! -e "$HOME/$directory" ] && mkdir -pv "$HOME/$directory"
+	[ ! -e "$HOME/$file" ] && ln -sv $(readlink -f "$file") "$HOME/$file"
 done
 exit 0
 
