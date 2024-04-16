@@ -20,9 +20,9 @@ First, download the main script file to the `~/.local/bin` directory:
 
 | Method    | Command                                                                                                   |
 | :-------- | :-------------------------------------------------------------------------------------------------------- |
-| **curl**  | `mkdir -p ~/.local/bin && curl https://raw.githubusercontent.com/sidthidet-k/stupid-dotfiles/main/stupid-dotfiles.sh -o ~/.local/bin/stupid-dotfiles` |
-| **wget**  | `mkdir -p ~/.local/bin && wget https://raw.githubusercontent.com/sidthidet-k/stupid-dotfiles/main/stupid-dotfiles.sh -O ~/.local/bin/stupid-dotfiles` |
-| **fetch** | `mkdir -p ~/.local/bin && fetch https://raw.githubusercontent.com/sidthidet-k/stupid-dotfiles/main/stupid-dotfiles.sh -o ~/.local/bin/stupid-dotfiles`|
+| **curl**  | `mkdir -p ~/.local/bin && curl https://raw.githubusercontent.com/sidthidet-k/stupid-dotfiles/main/stupid-dotfiles.sh -o ~/.local/bin/stupid-dotfiles && chmod +x ~/.local/bin/stupid-dotfiles` |
+| **wget**  | `mkdir -p ~/.local/bin && wget https://raw.githubusercontent.com/sidthidet-k/stupid-dotfiles/main/stupid-dotfiles.sh -O ~/.local/bin/stupid-dotfiles && chmod +x ~/.local/bin/stupid-dotfiles` |
+| **fetch** | `mkdir -p ~/.local/bin && fetch https://raw.githubusercontent.com/sidthidet-k/stupid-dotfiles/main/stupid-dotfiles.sh -o ~/.local/bin/stupid-dotfiles && chmod +x ~/.local/bin/stupid-dotfiles`|
 
 If `~/.local/bin` is not in the PATH environment variable, add the following command to `~/.bashrc` file for Bash:
 
