@@ -29,4 +29,5 @@ for file in "${file_list[@]}"; do
 	[ ! -e "$HOME/$directory" ] && mkdir -pv $(readlink -f "$HOME/$directory")
 	[ ! -e "$HOME/$file" ] && ln -sv $(readlink -f "$file") $(readlink -f "$HOME/$file")
 done
+exit 0
 
